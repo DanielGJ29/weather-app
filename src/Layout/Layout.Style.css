@@ -1,0 +1,4 @@
+.main-layout{
+    background: rgb(19,14,98);
+    background: linear-gradient(180deg, rgba(19,14,98,1) 0%, rgba(9,9,121,1) 23%, rgba(0,212,255,1) 100%);
+}
