@@ -24,7 +24,6 @@ const Home = () => {
         history.push("/");
         setLoader(true);
         const key = '3dd3d12882582471531c1ab8bf47bc13';
-        //const url =`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.REACT_API_KEY}`;
         const url =`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}`;
         const response = await fetch(url);
         const result = await response.json(response);
