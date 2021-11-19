@@ -20,6 +20,8 @@ const Home = () => {
 
     const handleSearchWeather = async e =>{
         e.preventDefault();
+        const inputSearch = document.getElementById("input-search");
+        inputSearch.value="";
         setCityInformation(null);
         history.push("/");
         setLoader(true);
@@ -40,6 +42,8 @@ const Home = () => {
     }
 
     return (
+        <>
+        { 
         <div className="">
                 <WeatherForm 
                 handlecityWeather={handlecityWeather} 
@@ -57,7 +61,9 @@ const Home = () => {
                 )
             }
            
-        </div>
+        </div> 
+        } 
+        </>
     );
 };
 
